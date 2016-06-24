@@ -24,4 +24,6 @@ Rails.application.routes.draw do
 
   #adding resource for password resets
   resources :password_resets,     only: [:new, :create, :edit, :update]
+  #has create and destroy RESTful resources
+  resources :microposts,          only: [:create, :destroy]
 end
